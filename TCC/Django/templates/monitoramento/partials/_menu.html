@@ -1,0 +1,48 @@
+{% load static %}
+<div class="pagina-inicial">
+    <header class="cabecalho">
+
+        <style>
+            .cabecalho__busca{
+                width: 10%;
+            }
+            .imagem__titulo{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 2rem;
+                color: #FFFFFF;
+                margin-left: 5%; 
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+           
+        </style>
+
+        <img src="{% static '/assets/logo/Logo(2).png' %}" />
+        {% for message in messages %}
+        <div class="alert alert-primary">
+                <p id="messages">{{message}}</p>
+        </div>
+        {% endfor %}
+
+        <div class="cabecalho__busca">
+            <div class="busca__fundo">
+                <a class="medico"><img src="{% static '/assets/imagens/monitoramento/medico6.png' %}"></a>
+                <p class="imagem__titulo">
+                    <a href="{% url 'perfil_usuario' usuario.username %}"> {{usuario.username}} </a>
+                </p>
+            </div>
+        </div>
+
+    </header>
+    <main class="principal">
+        <section class="menu-lateral">
+            <nav class="menu-lateral__navegacao">
+                <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+                <a href="{% url 'login' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Login</a>
+                <a href="{% url 'cadastro' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Cadastro</a>
+                <a href="{% url 'logout' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Logout</a>
+            </nav>
+        </section>

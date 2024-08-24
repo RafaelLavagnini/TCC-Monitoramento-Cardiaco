@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "379623814298",
+    "project_id": "alura-esportes-ecf65",
+    "storage_bucket": "alura-esportes-ecf65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379623814298:android:b1b2a3385947d8fd0bdb23",
+        "android_client_info": {
+          "package_name": "br.com.alura.aluraesporte"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-3V2wqMZmhppvxVf1dn9gcfLaRZDIrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
